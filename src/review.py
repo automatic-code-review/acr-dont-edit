@@ -27,7 +27,7 @@ def review(config):
 def __create_comment(message, path):
     comment = {
         "id": __generate_md5(path),
-        "comment": message,
+        "comment": message.replace("${FILE_PATH}", path),
         "position": {
             "path": path,
             "snipset": False
