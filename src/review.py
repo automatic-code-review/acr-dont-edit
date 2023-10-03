@@ -30,7 +30,8 @@ def __create_comment(message, path):
         "comment": message.replace("${FILE_PATH}", path),
         "position": {
             "path": path,
-            "snipset": False
+            "snipset": False,
+            "startInLine": 1
         }
     }
 
